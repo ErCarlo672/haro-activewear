@@ -8,12 +8,14 @@
   <meta name="theme-color" content="#F4F0EA">
   <meta property="og:title" content="HARO Activewear">
   <meta property="og:description" content="Hecha para destacar, no para encajar.">
-  <meta property="og:image" content="assets/img/royal-2.webp">
+  <meta property="og:image" content="https://ercarlo672.github.io/haro-activewear/assets/img/royal-2.webp">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23F4F0EA%22/%3E%3Ctext x=%2232%22 y=%2246%22 font-family=%22Georgia,serif%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%236B4A3A%22%3EH%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Josefin+Sans:wght@200;300;400;600&family=Mulish:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261018">
-  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css?v=20261018b">
+  <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('haro_intro'))document.documentElement.classList.add('no-intro');}catch(e){}</script>
 </head>
 <body>
 
@@ -62,7 +64,7 @@
   </header>
 
   <!-- Mobile menu -->
-  <div class="menu" id="menu" aria-hidden="true">
+  <div class="menu" id="menu" aria-hidden="true" inert>
     <nav class="menu__links">
       <a href="#coleccion"><small>01</small>Colección</a>
       <a href="#noir"><small>02</small>Colección Noir</a>
@@ -147,8 +149,8 @@
           <p class="eyebrow">01 — La colección</p>
           <h2 class="h2 reveal">Piezas para<br><em>quedarse.</em></h2>
         </div>
-        <div class="filters" role="tablist" aria-label="Filtrar por tono">
-          <button class="chip is-active" data-filter="all">Todo</button>
+        <div class="filters" role="group" aria-label="Filtrar por tono">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">Todo</button>
           <button class="chip" data-filter="royal"><i style="--c:#1E3DBA"></i>Royal</button>
           <button class="chip" data-filter="olive"><i style="--c:#4D5640"></i>Olive</button>
           <button class="chip" data-filter="cherry"><i style="--c:#4A1F28"></i>Cherry</button>
@@ -310,7 +312,7 @@
       <div class="fabric__grid">
         <div class="feat reveal"><span class="feat__n" data-count="2">0</span><span class="feat__u">capas</span><h3>Doble capa opaca</h3><p>Squat proof de verdad: sin transparencias, ni en el último set.</p></div>
         <div class="feat reveal"><span class="feat__n" data-count="4">0</span><span class="feat__u">vías</span><h3>Elasticidad total</h3><p>Se mueve contigo en cualquier dirección y recupera su forma.</p></div>
-        <div class="feat reveal"><span class="feat__n" data-count="0">0</span><span class="feat__u">costuras laterales</span><h3>Corte esculpido</h3><p>Cintura alta que estiliza la silueta sin marcar ni apretar.</p></div>
+        <div class="feat reveal"><span class="feat__n" data-count="4">0</span><span class="feat__u">tonos</span><h3>Corte esculpido</h3><p>Cintura alta que estiliza la silueta sin marcar ni apretar.</p></div>
         <div class="feat reveal"><span class="feat__n" data-count="30">0</span><span class="feat__u">días</span><h3>Sin riesgo</h3><p>Si la talla no es la tuya, la cambiamos. Así de fácil.</p></div>
       </div>
     </section>
@@ -407,7 +409,7 @@
 
   <!-- ===== Bag drawer ===== -->
   <div class="scrim" id="scrim"></div>
-  <aside class="bag" id="bag" aria-label="Bolsa de compra" aria-hidden="true">
+  <aside class="bag" id="bag" aria-label="Bolsa de compra" aria-hidden="true" inert>
     <header class="bag__head">
       <h3>Tu bolsa <span id="bagCount2">(0)</span></h3>
       <button class="bag__close" id="bagClose" aria-label="Cerrar bolsa">×</button>
@@ -429,8 +431,29 @@
   </aside>
 
   <!-- ===== Info modal ===== -->
-  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Información" inert>
     <div class="modal__box">
+      <div id="modal-product" class="modal__content">
+        <div class="qv">
+          <div class="qv__media"><img id="qvImg" src="assets/img/royal-2.webp" alt=""></div>
+          <div class="qv__info">
+            <p class="qv__tone"><i id="qvDot"></i><span id="qvTone"></span></p>
+            <h3 id="qvName"></h3>
+            <p class="qv__price" id="qvPrice"></p>
+            <p class="qv__label"><span>Talla</span><a href="#" data-modal="tallas">Guía de tallas</a></p>
+            <div class="qv__sizes" id="qvSizes">
+              <button type="button">XS</button><button type="button">S</button><button type="button">M</button><button type="button">L</button>
+            </div>
+            <button type="button" class="btn btn--solid btn--full" id="qvAdd"><span>Añadir a la bolsa</span></button>
+            <p class="qv__err" id="qvErr" role="alert"></p>
+            <ul class="qv__list">
+              <li>Tejido de segunda piel, doble capa</li>
+              <li>Envío gratis a partir de 60 €</li>
+              <li>Cambios y devoluciones en 30 días</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <button class="modal__close" id="modalClose" aria-label="Cerrar">×</button>
       <div id="modal-tallas" class="modal__content">
         <h3>Guía de tallas</h3>
@@ -455,6 +478,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="main.js?v=20261018" defer></script>
+  <script src="main.js?v=20261018b" defer></script>
 </body>
 </html>
