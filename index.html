@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HARO Activewear — Hecha para destacar, no para encajar</title>
+  <meta name="description" content="HARO Activewear. Ropa deportiva esculpida, de segunda piel, para entrenar y para la calle. Descubre la Colección Noir.">
+  <meta name="theme-color" content="#F4F0EA">
+  <meta property="og:title" content="HARO Activewear">
+  <meta property="og:description" content="Hecha para destacar, no para encajar.">
+  <meta property="og:image" content="assets/img/royal-2.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Josefin+Sans:wght@200;300;400;600&family=Mulish:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261018">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ===== Splash ===== -->
+  <div class="splash" id="splash" aria-hidden="true">
+    <div class="splash__logo">
+      <span style="--i:0">H</span><span style="--i:1">A</span><span style="--i:2">R</span><span style="--i:3">O</span>
+    </div>
+    <div class="splash__sub">Activewear</div>
+    <div class="splash__bar"><i></i></div>
+  </div>
+
+  <!-- ===== Cursor (desktop) ===== -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label">Ver</span></div>
+
+  <!-- ===== Announcement ===== -->
+  <div class="announce" role="region" aria-label="Avisos">
+    <div class="announce__track">
+      <span>Envío gratis a partir de 60 €</span><span>✦</span>
+      <span>Colección Noir · Ya disponible</span><span>✦</span>
+      <span>Cambios y devoluciones en 30 días</span><span>✦</span>
+      <span>Hecha para destacar, no para encajar</span><span>✦</span>
+      <span>Envío gratis a partir de 60 €</span><span>✦</span>
+      <span>Colección Noir · Ya disponible</span><span>✦</span>
+      <span>Cambios y devoluciones en 30 días</span><span>✦</span>
+      <span>Hecha para destacar, no para encajar</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="nav" id="nav">
+    <nav class="nav__side nav__side--left" aria-label="Principal">
+      <a href="#coleccion" class="nav__link">Colección</a>
+      <a href="#noir" class="nav__link">Noir</a>
+      <a href="#tonos" class="nav__link">Tonos</a>
+      <a href="#estetica" class="nav__link">Estética</a>
+    </nav>
+    <a href="#top" class="nav__logo" aria-label="HARO Activewear, inicio">HARO</a>
+    <div class="nav__side nav__side--right">
+      <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="nav__link nav__hide-sm">Instagram</a>
+      <button class="nav__bag" id="bagBtn" aria-label="Abrir bolsa">
+        Bolsa <span class="nav__count" id="bagCount">0</span>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links">
+      <a href="#coleccion"><small>01</small>Colección</a>
+      <a href="#noir"><small>02</small>Colección Noir</a>
+      <a href="#tonos"><small>03</small>Tonos</a>
+      <a href="#lookbook"><small>04</small>Lookbook</a>
+      <a href="#estetica"><small>05</small>Haro Estética</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener">@haro_activewear</a>
+      <a href="https://www.instagram.com/haroesthetic/" target="_blank" rel="noopener">@haroesthetic</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__meta">
+        <span>SS · 26</span>
+        <span class="hero__dot"></span>
+        <span>Second skin activewear</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span style="--d:0s">Hecha para</span></span>
+        <span class="line line--big"><span style="--d:.12s">destacar<sup>®</sup></span></span>
+        <span class="line line--serif"><span style="--d:.24s"><em>no para encajar.</em></span></span>
+      </h1>
+
+      <div class="hero__stage" id="heroStage">
+        <figure class="hero__img hero__img--a" data-depth="0.6">
+          <img src="assets/img/olive.webp" alt="Conjunto olive de tirantes y biker" width="457" height="541">
+        </figure>
+        <figure class="hero__img hero__img--b" data-depth="1">
+          <img src="assets/img/royal-2.webp" alt="Top halter y legging sculpt en azul royal" width="457" height="542">
+          <figcaption>Royal Sculpt Set</figcaption>
+        </figure>
+        <figure class="hero__img hero__img--c" data-depth="0.35">
+          <img src="assets/img/wine-2.webp" alt="Top racer y legging en tono cherry" width="299" height="540">
+        </figure>
+        <div class="hero__badge" aria-hidden="true">
+          <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circ">COLECCIÓN NOIR · YOUR NEW OBSESSION · </textPath></text></svg>
+          <span>✦</span>
+        </div>
+      </div>
+
+      <div class="hero__foot">
+        <p class="hero__lede">Tejidos de segunda piel que esculpen, sujetan y no transparentan. Para el entreno, para la calle y para todo lo que viene después.</p>
+        <div class="hero__ctas">
+          <a href="#coleccion" class="btn btn--solid magnetic"><span>Comprar colección</span></a>
+          <a href="#noir" class="btn btn--line magnetic"><span>Descubrir Noir</span></a>
+        </div>
+      </div>
+      <a href="#coleccion" class="hero__scroll" aria-label="Bajar"><span>Scroll</span><i></i></a>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <section class="band" aria-label="Valores">
+      <div class="band__track" data-speed="1">
+        <span>Second skin</span><em>✦</em><span class="o">Sculpt fit</span><em>✦</em><span>Squat proof</span><em>✦</em><span class="o">Cintura alta</span><em>✦</em>
+        <span>Second skin</span><em>✦</em><span class="o">Sculpt fit</span><em>✦</em><span>Squat proof</span><em>✦</em><span class="o">Cintura alta</span><em>✦</em>
+      </div>
+    </section>
+
+    <!-- ===== Manifesto ===== -->
+    <section class="manifesto">
+      <p class="eyebrow">El manifiesto</p>
+      <p class="manifesto__text reveal" data-words>
+        No diseñamos ropa para pasar desapercibida. Diseñamos piezas que <em>se ajustan como una segunda piel</em>, que esculpen sin apretar y que funcionan igual de bien con un matcha en la mano que bajo la barra.
+      </p>
+      <div class="manifesto__sign reveal">
+        <img src="assets/img/ha-monogram.webp" alt="" width="60" height="39">
+        <span>Una firma HARO</span>
+      </div>
+    </section>
+
+    <!-- ===== Collection ===== -->
+    <section class="shop" id="coleccion">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow">01 — La colección</p>
+          <h2 class="h2 reveal">Piezas para<br><em>quedarse.</em></h2>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filtrar por tono">
+          <button class="chip is-active" data-filter="all">Todo</button>
+          <button class="chip" data-filter="royal"><i style="--c:#1E3DBA"></i>Royal</button>
+          <button class="chip" data-filter="olive"><i style="--c:#4D5640"></i>Olive</button>
+          <button class="chip" data-filter="cherry"><i style="--c:#4A1F28"></i>Cherry</button>
+          <button class="chip" data-filter="mocha"><i style="--c:#9C8A78"></i>Mocha</button>
+        </div>
+      </header>
+
+      <div class="grid" id="grid">
+        <article class="card reveal" data-id="halter-royal" data-name="Top Halter Sculpt" data-tone="Royal" data-color="royal" data-price="29.90" data-img="assets/img/royal-2.webp">
+          <div class="card__media" data-cursor="Ver">
+            <img class="card__img" src="assets/img/royal-2.webp" alt="Top halter sculpt azul royal" loading="lazy" width="457" height="542">
+            <img class="card__img card__img--alt" src="assets/img/royal-1.webp" alt="" loading="lazy" width="457" height="541">
+            <span class="card__tag">Nuevo</span>
+            <div class="card__sizes" aria-label="Elige talla">
+              <span>Añadir talla</span>
+              <div><button>XS</button><button>S</button><button>M</button><button>L</button></div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Top Halter Sculpt</h3><span class="card__price">29,90 €</span>
+            <p><i style="--c:#1E3DBA"></i>Royal</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-id="legging-royal" data-name="Legging Sculpt" data-tone="Royal" data-color="royal" data-price="39.90" data-img="assets/img/royal-1.webp">
+          <div class="card__media" data-cursor="Ver">
+            <img class="card__img" src="assets/img/royal-1.webp" alt="Legging sculpt de cintura alta azul royal" loading="lazy" width="457" height="541">
+            <img class="card__img card__img--alt" src="assets/img/royal-2.webp" alt="" loading="lazy" width="457" height="542">
+            <div class="card__sizes" aria-label="Elige talla">
+              <span>Añadir talla</span>
+              <div><button>XS</button><button>S</button><button>M</button><button>L</button></div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Legging Sculpt</h3><span class="card__price">39,90 €</span>
+            <p><i style="--c:#1E3DBA"></i>Royal</p>
+          </div>
+        </article>
+
+        <article class="card card--tall reveal" data-id="set-olive" data-name="Set Tank &amp; Biker" data-tone="Olive" data-color="olive" data-price="54.90" data-img="assets/img/olive.webp">
+          <div class="card__media" data-cursor="Ver">
+            <img class="card__img" src="assets/img/olive.webp" alt="Set de top de tirantes y biker short en olive" loading="lazy" width="457" height="541">
+            <span class="card__tag">Set</span>
+            <div class="card__sizes" aria-label="Elige talla">
+              <span>Añadir talla</span>
+              <div><button>XS</button><button>S</button><button>M</button><button>L</button></div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Set Tank &amp; Biker</h3><span class="card__price">54,90 €</span>
+            <p><i style="--c:#4D5640"></i>Olive</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-id="racer-cherry" data-name="Top Racer Noir" data-tone="Cherry" data-color="cherry" data-price="32.90" data-img="assets/img/wine-2.webp">
+          <div class="card__media" data-cursor="Ver">
+            <img class="card__img" src="assets/img/wine-2.webp" alt="Top racer de espalda nadadora en tono cherry" loading="lazy" width="299" height="540">
+            <img class="card__img card__img--alt" src="assets/img/wine-1.webp" alt="" loading="lazy" width="457" height="374">
+            <span class="card__tag card__tag--dark">Noir</span>
+            <div class="card__sizes" aria-label="Elige talla">
+              <span>Añadir talla</span>
+              <div><button>XS</button><button>S</button><button>M</button><button>L</button></div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Top Racer Noir</h3><span class="card__price">32,90 €</span>
+            <p><i style="--c:#4A1F28"></i>Cherry</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-id="legging-cherry" data-name="Legging Sculpt Noir" data-tone="Cherry" data-color="cherry" data-price="39.90" data-img="assets/img/wine-1.webp">
+          <div class="card__media" data-cursor="Ver">
+            <img class="card__img" src="assets/img/wine-1.webp" alt="Legging sculpt en tono cherry" loading="lazy" width="457" height="374">
+            <img class="card__img card__img--alt" src="assets/img/duo.webp" alt="" loading="lazy" width="457" height="542">
+            <span class="card__tag card__tag--dark">Noir</span>
+            <div class="card__sizes" aria-label="Elige talla">
+              <span>Añadir talla</span>
+              <div><button>XS</button><button>S</button><button>M</button><button>L</button></div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Legging Sculpt Noir</h3><span class="card__price">39,90 €</span>
+            <p><i style="--c:#4A1F28"></i>Cherry</p>
+          </div>
+        </article>
+
+        <article class="card card--tall reveal" data-id="mono-mocha" data-name="Mono Halter" data-tone="Mocha" data-color="mocha" data-price="49.90" data-img="assets/img/mocha.webp">
+          <div class="card__media" data-cursor="Ver">
+            <img class="card__img" src="assets/img/mocha.webp" alt="Mono corto halter en tono mocha" loading="lazy" width="236" height="542">
+            <img class="card__img card__img--alt" src="assets/img/duo.webp" alt="" loading="lazy" width="457" height="542">
+            <span class="card__tag">Nuevo</span>
+            <div class="card__sizes" aria-label="Elige talla">
+              <span>Añadir talla</span>
+              <div><button>XS</button><button>S</button><button>M</button><button>L</button></div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h3>Mono Halter</h3><span class="card__price">49,90 €</span>
+            <p><i style="--c:#9C8A78"></i>Mocha</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Noir drop ===== -->
+    <section class="noir" id="noir">
+      <div class="noir__bg" aria-hidden="true">NOIR</div>
+      <div class="noir__inner">
+        <div class="noir__media">
+          <figure class="noir__img noir__img--1"><img src="assets/img/wine-2.webp" alt="Colección Noir, top racer cherry" loading="lazy" width="299" height="540"></figure>
+          <figure class="noir__img noir__img--2"><img src="assets/img/duo.webp" alt="Dos chicas con piezas de la Colección Noir" loading="lazy" width="457" height="542"></figure>
+        </div>
+        <div class="noir__copy">
+          <p class="eyebrow eyebrow--light">02 — Drop limitado</p>
+          <h2 class="h2 h2--light reveal">Colección <em>Noir</em></h2>
+          <p class="noir__lede">Your new obsession is coming. Tonos profundos, cortes que estilizan y una tirada corta: cuando se agota, no vuelve.</p>
+
+          <div class="countdown" id="countdown" data-target="2026-11-01T20:00:00+01:00" aria-live="polite">
+            <div class="countdown__cell"><span class="countdown__num" data-unit="d">00</span><small>días</small></div>
+            <div class="countdown__cell"><span class="countdown__num" data-unit="h">00</span><small>horas</small></div>
+            <div class="countdown__cell"><span class="countdown__num" data-unit="m">00</span><small>minutos</small></div>
+            <div class="countdown__cell"><span class="countdown__num" data-unit="s">00</span><small>segundos</small></div>
+          </div>
+
+          <form class="notify" id="notifyForm">
+            <label for="notifyEmail" class="sr-only">Tu email</label>
+            <input type="email" id="notifyEmail" placeholder="Tu email para acceso anticipado" required>
+            <button type="submit" class="magnetic"><span>Avísame</span></button>
+          </form>
+          <p class="notify__msg" id="notifyMsg" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tones ===== -->
+    <section class="tones" id="tonos" style="--tone:#E9E3DB">
+      <div class="tones__list">
+        <p class="eyebrow">03 — Elige tu tono</p>
+        <button class="tone is-active" data-tone="royal" data-bg="#DDE2F3" data-ink="#1E3DBA"><span class="tone__n">01</span><span class="tone__name">Royal</span><span class="tone__desc">Eléctrico. Para los días que no piden permiso.</span></button>
+        <button class="tone" data-tone="olive" data-bg="#E3E5DA" data-ink="#4D5640"><span class="tone__n">02</span><span class="tone__name">Olive</span><span class="tone__desc">Sereno, terroso, imposible de ignorar.</span></button>
+        <button class="tone" data-tone="cherry" data-bg="#EBDDDD" data-ink="#4A1F28"><span class="tone__n">03</span><span class="tone__name">Cherry</span><span class="tone__desc">El tono de la Colección Noir. Profundo y elegante.</span></button>
+        <button class="tone" data-tone="mocha" data-bg="#ECE4DA" data-ink="#7A6553"><span class="tone__n">04</span><span class="tone__name">Mocha</span><span class="tone__desc">Neutro cálido. Combina con todo, también contigo.</span></button>
+      </div>
+      <div class="tones__stage">
+        <img class="tones__img is-active" data-tone="royal" src="assets/img/royal-1.webp" alt="Conjunto royal" loading="lazy" width="457" height="541">
+        <img class="tones__img" data-tone="olive" src="assets/img/olive.webp" alt="Conjunto olive" loading="lazy" width="457" height="541">
+        <img class="tones__img" data-tone="cherry" src="assets/img/wine-2.webp" alt="Conjunto cherry" loading="lazy" width="299" height="540">
+        <img class="tones__img" data-tone="mocha" src="assets/img/mocha.webp" alt="Mono mocha" loading="lazy" width="236" height="542">
+        <div class="tones__swatch" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===== Fabric / features ===== -->
+    <section class="fabric">
+      <header class="section-head section-head--center">
+        <p class="eyebrow">04 — El tejido</p>
+        <h2 class="h2 reveal">Lo que no se ve,<br><em>también se nota.</em></h2>
+      </header>
+      <div class="fabric__grid">
+        <div class="feat reveal"><span class="feat__n" data-count="2">0</span><span class="feat__u">capas</span><h3>Doble capa opaca</h3><p>Squat proof de verdad: sin transparencias, ni en el último set.</p></div>
+        <div class="feat reveal"><span class="feat__n" data-count="4">0</span><span class="feat__u">vías</span><h3>Elasticidad total</h3><p>Se mueve contigo en cualquier dirección y recupera su forma.</p></div>
+        <div class="feat reveal"><span class="feat__n" data-count="0">0</span><span class="feat__u">costuras laterales</span><h3>Corte esculpido</h3><p>Cintura alta que estiliza la silueta sin marcar ni apretar.</p></div>
+        <div class="feat reveal"><span class="feat__n" data-count="30">0</span><span class="feat__u">días</span><h3>Sin riesgo</h3><p>Si la talla no es la tuya, la cambiamos. Así de fácil.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== Lookbook horizontal ===== -->
+    <section class="look" id="lookbook">
+      <div class="look__sticky">
+        <div class="look__head">
+          <p class="eyebrow">05 — Lookbook</p>
+          <h2 class="h2">De la calle<br><em>al entreno.</em></h2>
+        </div>
+        <div class="look__track" id="lookTrack">
+          <figure class="look__item"><img src="assets/img/royal-1.webp" alt="Look royal saliendo del coche" loading="lazy" width="457" height="541"><figcaption><span>01</span> Royal Sculpt</figcaption></figure>
+          <figure class="look__item look__item--low"><img src="assets/img/olive.webp" alt="Look olive por la ciudad" loading="lazy" width="457" height="541"><figcaption><span>02</span> Olive Tank</figcaption></figure>
+          <figure class="look__item"><img src="assets/img/wine-2.webp" alt="Look cherry en paso de peatones" loading="lazy" width="299" height="540"><figcaption><span>03</span> Cherry Racer</figcaption></figure>
+          <figure class="look__item look__item--low"><img src="assets/img/duo.webp" alt="Dos looks: mocha y cherry" loading="lazy" width="457" height="542"><figcaption><span>04</span> Mocha &amp; Cherry</figcaption></figure>
+          <figure class="look__item"><img src="assets/img/royal-2.webp" alt="Look royal halter" loading="lazy" width="457" height="542"><figcaption><span>05</span> Royal Halter</figcaption></figure>
+          <figure class="look__item look__item--low"><img src="assets/img/wine-1.webp" alt="Detalle legging cherry" loading="lazy" width="457" height="374"><figcaption><span>06</span> Noir Detail</figcaption></figure>
+          <div class="look__end">
+            <p>¿Ya tienes<br>la tuya?</p>
+            <a href="#coleccion" class="btn btn--line magnetic"><span>Ir a la tienda</span></a>
+          </div>
+        </div>
+        <div class="look__progress"><i id="lookBar"></i></div>
+      </div>
+    </section>
+
+    <!-- ===== Haro Estética bridge ===== -->
+    <section class="estetica" id="estetica">
+      <div class="estetica__media">
+        <img src="assets/img/andrea.webp" alt="Andrea Haro impartiendo una formación de estética" loading="lazy" width="1080" height="1080">
+        <img class="estetica__mini" src="assets/img/estetica-lash.webp" alt="Trabajo de pestañas de Haro Estética" loading="lazy" width="500" height="500">
+      </div>
+      <div class="estetica__copy">
+        <img class="estetica__mono reveal" src="assets/img/ha-monogram.webp" alt="Monograma Andrea Haro" width="90" height="58">
+        <p class="estetica__eyebrow">Andrea Haro</p>
+        <h2 class="estetica__title reveal">La misma firma.<br>Otro ritual.</h2>
+        <p class="estetica__text">HARO también es <strong>Haro Estética</strong>: estudio especializado en extensiones y lifting de pestañas y diseño de cejas, con formación online y presencial para profesionales del sector.</p>
+        <ul class="estetica__list">
+          <li><span>5+</span> años en el sector</li>
+          <li><span>6.000+</span> clientas</li>
+          <li><span>Online</span> &amp; presencial</li>
+        </ul>
+        <div class="estetica__ctas">
+          <a href="https://harolash.com/" target="_blank" rel="noopener" class="btn btn--line btn--square magnetic"><span>Ver formaciones</span></a>
+          <a href="https://www.instagram.com/haroesthetic/" target="_blank" rel="noopener" class="link-arrow">@haroesthetic <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Instagram ===== -->
+    <section class="insta">
+      <header class="insta__head">
+        <h2 class="h2">#HAROGIRLS</h2>
+        <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="link-arrow">Síguenos en @haro_activewear <span>↗</span></a>
+      </header>
+      <div class="insta__grid">
+        <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="insta__item" data-cursor="IG"><img src="assets/img/royal-1.webp" alt="Post de Instagram: look royal" loading="lazy" width="457" height="541"></a>
+        <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="insta__item" data-cursor="IG"><img src="assets/img/olive.webp" alt="Post de Instagram: look olive" loading="lazy" width="457" height="541"></a>
+        <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="insta__item" data-cursor="IG"><img src="assets/img/wine-2.webp" alt="Post de Instagram: look cherry" loading="lazy" width="299" height="540"></a>
+        <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="insta__item" data-cursor="IG"><img src="assets/img/wine-1.webp" alt="Post de Instagram: detalle cherry" loading="lazy" width="457" height="374"></a>
+        <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="insta__item" data-cursor="IG"><img src="assets/img/royal-2.webp" alt="Post de Instagram: look royal halter" loading="lazy" width="457" height="542"></a>
+        <a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener" class="insta__item" data-cursor="IG"><img src="assets/img/duo.webp" alt="Post de Instagram: looks mocha y cherry" loading="lazy" width="457" height="542"></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__news">
+        <h3>Únete al club HARO</h3>
+        <p>Lanzamientos, drops limitados y acceso anticipado. Sin spam.</p>
+        <form class="notify notify--light" id="newsForm">
+          <label for="newsEmail" class="sr-only">Tu email</label>
+          <input type="email" id="newsEmail" placeholder="Tu email" required>
+          <button type="submit"><span>Suscribirme</span></button>
+        </form>
+        <p class="notify__msg" id="newsMsg" role="status"></p>
+      </div>
+      <div class="footer__cols">
+        <div><h4>Tienda</h4><a href="#coleccion">Colección</a><a href="#noir">Colección Noir</a><a href="#tonos">Tonos</a><a href="#lookbook">Lookbook</a></div>
+        <div><h4>Ayuda</h4><a href="#" data-modal="tallas">Guía de tallas</a><a href="#" data-modal="envios">Envíos y devoluciones</a><a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener">Contacto por DM</a></div>
+        <div><h4>Universo HARO</h4><a href="https://www.instagram.com/haro_activewear/" target="_blank" rel="noopener">Instagram Activewear</a><a href="https://harolash.com/" target="_blank" rel="noopener">Haro Estética</a><a href="https://www.instagram.com/haroesthetic/" target="_blank" rel="noopener">Instagram Estética</a></div>
+      </div>
+    </div>
+    <div class="footer__giant" aria-hidden="true">HARO</div>
+    <div class="footer__bottom">
+      <span>© 2026 HARO Activewear</span>
+      <span>Aviso legal · Privacidad · Cookies</span>
+      <span>Hecha para destacar, no para encajar 🤎</span>
+    </div>
+  </footer>
+
+  <!-- ===== Bag drawer ===== -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="bag" id="bag" aria-label="Bolsa de compra" aria-hidden="true">
+    <header class="bag__head">
+      <h3>Tu bolsa <span id="bagCount2">(0)</span></h3>
+      <button class="bag__close" id="bagClose" aria-label="Cerrar bolsa">×</button>
+    </header>
+    <div class="bag__ship">
+      <p id="shipText">Te faltan <strong>60,00 €</strong> para el envío gratis</p>
+      <div class="bag__shipbar"><i id="shipBar"></i></div>
+    </div>
+    <ul class="bag__items" id="bagItems"></ul>
+    <div class="bag__empty" id="bagEmpty">
+      <p>Tu bolsa está vacía.</p>
+      <a href="#coleccion" class="btn btn--line" data-close-bag><span>Descubrir la colección</span></a>
+    </div>
+    <footer class="bag__foot">
+      <div class="bag__total"><span>Subtotal</span><strong id="bagTotal">0,00 €</strong></div>
+      <button class="btn btn--solid btn--full" id="checkout"><span>Finalizar compra</span></button>
+      <p class="bag__note">Impuestos incluidos. Envío calculado en el checkout.</p>
+    </footer>
+  </aside>
+
+  <!-- ===== Info modal ===== -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__box">
+      <button class="modal__close" id="modalClose" aria-label="Cerrar">×</button>
+      <div id="modal-tallas" class="modal__content">
+        <h3>Guía de tallas</h3>
+        <table>
+          <thead><tr><th>Talla</th><th>Pecho</th><th>Cintura</th><th>Cadera</th></tr></thead>
+          <tbody>
+            <tr><td>XS</td><td>78–82</td><td>60–64</td><td>86–90</td></tr>
+            <tr><td>S</td><td>82–86</td><td>64–68</td><td>90–94</td></tr>
+            <tr><td>M</td><td>86–90</td><td>68–72</td><td>94–98</td></tr>
+            <tr><td>L</td><td>90–96</td><td>72–78</td><td>98–104</td></tr>
+          </tbody>
+        </table>
+        <p>Medidas en cm. Si estás entre dos tallas, elige la menor para un ajuste más compresivo.</p>
+      </div>
+      <div id="modal-envios" class="modal__content">
+        <h3>Envíos y devoluciones</h3>
+        <p>Envío gratuito en pedidos a partir de 60 €. Preparamos tu pedido en 24–48 h laborables.</p>
+        <p>Tienes 30 días para cambios y devoluciones. Las prendas deben estar sin usar y con su etiqueta.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="main.js?v=20261018" defer></script>
+</body>
+</html>
