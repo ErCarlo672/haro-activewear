@@ -523,6 +523,35 @@
     });
   }
 
+  /* ---------- Noir: vídeo de campaña en bucle ---------- */
+  function initDrop() {
+    var sec = $('#drop'), vid = $('#dropVideo');
+    if (!sec || !vid) return;
+    var mobile = window.matchMedia('(max-width: 760px), (orientation: portrait)').matches;
+    if (mobile) $('#dropPoster').src = vid.getAttribute('data-poster-mobile');
+    function play() {
+      if (!vid.src) { vid.src = vid.getAttribute(mobile ? 'data-mobile' : 'data-desktop'); vid.load(); }
+      var p = vid.play(); if (p && p.catch) p.catch(function () {});
+    }
+    vid.addEventListener('playing', function () { sec.classList.add('is-live'); });
+    // el botón aparece cuando el vídeo llega al cierre con el logo
+    vid.addEventListener('timeupdate', function () { sec.classList.toggle('is-end', vid.currentTime > 12.3); });
+    // el anuncio tiene música: empieza en silencio y se activa con el botón
+    var snd = $('#dropSound');
+    if (snd) snd.addEventListener('click', function () {
+      vid.muted = !vid.muted;
+      snd.setAttribute('aria-pressed', String(!vid.muted));
+      snd.querySelector('span').textContent = vid.muted ? 'Activar sonido' : 'Silenciar';
+      if (!vid.muted) { if (vid.currentTime > 12) vid.currentTime = 0; play(); }
+    });
+    // solo se reproduce mientras se ve: ahorra batería y datos
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (en) {
+        if (en[0].isIntersecting) play(); else if (!vid.paused) vid.pause();
+      }, { threshold: 0.25 }).observe(sec);
+    } else play();
+  }
+
   function boot() {
     safe(initSplash, 'splash');
     safe(initCursor, 'cursor');
@@ -541,6 +570,7 @@
     safe(initMagnetic, 'magnetic');
     safe(initModal, 'modal');
     safe(initQuickView, 'quickview');
+    safe(initDrop, 'drop');
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);

@@ -608,3 +608,18 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; }
   .modal__box { max-height: 92svh; overflow-y: auto; }
   .modal__close { background: var(--bone); border-radius: 50%; z-index: 2; }
 }
+
+/* ---------- Noir · vídeo de campaña (en bucle, sin sonido) ---------- */
+.drop { position: relative; height: 100vh; height: 100svh; min-height: 560px; overflow: hidden; background: #0d0b0b; }
+.drop__poster, .drop__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.drop__video { opacity: 0; transition: opacity .5s ease; }
+.drop.is-live .drop__video { opacity: 1; }
+.drop__cta { position: absolute; left: 50%; bottom: 9vh; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; background: var(--bone); color: var(--ink); transition: opacity .6s var(--ease), transform .8s var(--ease); }
+.drop__cta::before { background: var(--mocha); }
+.drop__cta:hover { color: var(--bone); }
+.drop.is-end .drop__cta { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+.drop__sound { position: absolute; right: var(--pad); bottom: 28px; display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px 8px; border-radius: 40px; background: rgba(13, 11, 11, .55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: var(--bone); font-family: var(--f-display); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; border: 1px solid rgba(244, 240, 234, .25); z-index: 2; }
+.drop__sound i { width: 14px; height: 12px; background: currentColor; -webkit-mask: linear-gradient(90deg, #000 0 2px, transparent 2px 4px, #000 4px 6px, transparent 6px 8px, #000 8px 10px, transparent 10px 12px, #000 12px 14px); mask: linear-gradient(90deg, #000 0 2px, transparent 2px 4px, #000 4px 6px, transparent 6px 8px, #000 8px 10px, transparent 10px 12px, #000 12px 14px); opacity: .5; }
+.drop__sound[aria-pressed="true"] i { opacity: 1; animation: eq .9s ease-in-out infinite alternate; }
+@keyframes eq { to { transform: scaleY(.45); } }
+@media (max-width: 760px), (orientation: portrait) { .drop__cta { bottom: 12vh; } .drop__sound { bottom: 20px; right: 16px; } }

@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Josefin+Sans:wght@200;300;400;600&family=Mulish:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261018b">
+  <link rel="stylesheet" href="styles.css?v=20261019b">
   <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('haro_intro'))document.documentElement.classList.add('no-intro');}catch(e){}</script>
 </head>
 <body>
@@ -49,7 +49,7 @@
   <header class="nav" id="nav">
     <nav class="nav__side nav__side--left" aria-label="Principal">
       <a href="#coleccion" class="nav__link">Colección</a>
-      <a href="#noir" class="nav__link">Noir</a>
+      <a href="#drop" class="nav__link">Noir</a>
       <a href="#tonos" class="nav__link">Tonos</a>
       <a href="#estetica" class="nav__link">Estética</a>
     </nav>
@@ -67,7 +67,7 @@
   <div class="menu" id="menu" aria-hidden="true" inert>
     <nav class="menu__links">
       <a href="#coleccion"><small>01</small>Colección</a>
-      <a href="#noir"><small>02</small>Colección Noir</a>
+      <a href="#drop"><small>02</small>Colección Noir</a>
       <a href="#tonos"><small>03</small>Tonos</a>
       <a href="#lookbook"><small>04</small>Lookbook</a>
       <a href="#estetica"><small>05</small>Haro Estética</a>
@@ -116,7 +116,7 @@
         <p class="hero__lede">Tejidos de segunda piel que esculpen, sujetan y no transparentan. Para el entreno, para la calle y para todo lo que viene después.</p>
         <div class="hero__ctas">
           <a href="#coleccion" class="btn btn--solid magnetic"><span>Comprar colección</span></a>
-          <a href="#noir" class="btn btn--line magnetic"><span>Descubrir Noir</span></a>
+          <a href="#drop" class="btn btn--line magnetic"><span>Descubrir Noir</span></a>
         </div>
       </div>
       <a href="#coleccion" class="hero__scroll" aria-label="Bajar"><span>Scroll</span><i></i></a>
@@ -253,6 +253,16 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <!-- ===== Noir · vídeo de campaña ===== -->
+    <section class="drop" id="drop" aria-label="Colección Noir: vídeo de campaña">
+      <img class="drop__poster" id="dropPoster" src="assets/video/noir-ad-poster.webp" alt="Colección Noir de HARO" width="1920" height="1080">
+      <video class="drop__video" id="dropVideo" muted loop playsinline preload="none"
+             data-desktop="assets/video/noir-ad.mp4" data-mobile="assets/video/noir-ad-m.mp4"
+             data-poster-mobile="assets/video/noir-ad-poster-m.webp"></video>
+      <button class="drop__sound" id="dropSound" type="button" aria-pressed="false"><i aria-hidden="true"></i><span>Activar sonido</span></button>
+      <a href="#noir" class="drop__cta btn btn--solid" id="dropCta"><span>Avísame del drop</span></a>
     </section>
 
     <!-- ===== Noir drop ===== -->
@@ -478,6 +488,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="main.js?v=20261018b" defer></script>
+  <script src="main.js?v=20261019b" defer></script>
 </body>
 </html>
